@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/numero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero 1"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="32sp"/>
+
+    <EditText
+        android:id="@+id/operador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="operador"
+        android:gravity="center"
+        android:inputType="text"
+        android:textSize="32sp"/>
+
+    <EditText
+        android:id="@+id/numero2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="numero 2"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="32sp"/>
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular numeros"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+        <ProgressBar
+            android:id="@+id/calculando"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>
